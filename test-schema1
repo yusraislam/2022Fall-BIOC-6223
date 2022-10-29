@@ -1,26 +1,35 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
-  "$id": "https://github.com/GWU-Bioinformatics/2022Fall-BIOC-6223/new/test-branch",
-  "type": "object",
-  "required": [
-    "ID",
-    "Name"
-  ],
-  "properties": {
-    "ID": {
-      "type": "number",
-      "examples": [
-        1,
-        2,
-        3
-      ]
-    }
-    "Name": {
-      "type": "string",
-      "examples": [
-        "Jim",
-        "Bob",
-        "Eileithyia"
-      ]
-    }
+	"$id": "https://github.com/GWU-Bioinformatics/2022Fall-BIOC-6223/new/test-branch",
+	"type": "object",
+	"required": [
+		"Students"
+	],
+	"properties": {
+		"Students": {
+			"type": "object",
+			"description": "Container for all student data.",
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"ID": {
+						"type": "number",
+						"examples": [
+							1,
+							2,
+							3
+						]
+					},
+					"Name": {
+						"type": "string",
+						"examples": [
+							"Jim",
+							"Bob",
+							"Eileithyia"
+						]
+					}
+				}
+			}
+		}
+	}
 }
