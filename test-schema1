@@ -9,11 +9,16 @@
 		"Students": {
 			"type": "object",
 			"description": "Container for all student data.",
+			"required": [
+				"ID",
+				"Name"
+			],
 			"items": {
 				"additionalProperties": false,
 				"properties": {
 					"ID": {
 						"type": "number",
+						"description": "Unique identifier for student.",
 						"examples": [
 							1,
 							2,
@@ -21,13 +26,36 @@
 						]
 					},
 					"Name": {
+						"description": "Name of student.",
 						"type": "string",
 						"examples": [
 							"Jim",
 							"Bob",
 							"Eileithyia"
 						]
-					}
+					},
+					"Quiz Grades": {
+						"type": "array",
+						"properties": {
+							"quiz_score": {
+								"type": "number"
+                            },
+							"date": {
+								"type": "string"
+                            }
+						}
+                    },
+					"Homework Grades": {
+						"type": "array",
+						"properties": {
+							"homework_score": {
+								"type": "number"
+                            },
+							"date": {
+								"type": "string"
+                            }
+						}
+                    }
 				}
 			}
 		}
