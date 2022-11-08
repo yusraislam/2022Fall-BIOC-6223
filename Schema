@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Length in bp": {
+          "type": "integer"
+        },
+        "Accession": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Length in bp",
+        "Accession"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Length in bp": {
+          "type": "integer"
+        },
+        "Accession": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Length in bp",
+        "Accession"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Length in bp": {
+          "type": "integer"
+        },
+        "Accession": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Length in bp",
+        "Accession"
+      ]
+    }
+  ]
+}
